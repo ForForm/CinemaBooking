@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2FFAD18-29CE-4DD9-B584-1B6DC01F6121}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CinemaBooking</RootNamespace>
+    <AssemblyName>CinemaBooking</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1492639406_ticket.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FsmTagReaderLite, Version=18.5.8.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\FsmTagReaderLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=12.2.18.912, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AAA_Test.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acente.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcenteKullanici.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AcenteTipi.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADRES_BILGILERI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AKTIVASYON.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_Bileklik.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_BileklikTarife.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_HizmetTuru.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_Kiosk.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_Kullanici.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_KullaniciOturum.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_KurumTuru.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_Lokasyon.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_Operator.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_Parametre.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AR_Rezervasyon.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BAKIYE_YUKLEME.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BAKIYE_YUKLEME_BONUS_TANIM.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BAKIYE_YUKLEME_COP.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BAKIYE_YUKLEME_DUZELTME.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BAKIYE_YUKLEME_IADE.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banka.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BILET.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BiletKota.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BiletKotaKod.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BiletTalep.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BiletTarife.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BILET_DUZELTME.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BILET_ODEME.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BILET_OZEL.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BILET_SABLON.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BILET_TARIFE.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BILET_TARIFE_SABLON.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BILET_TARIFE_YETKI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BOLUM.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BURS.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIHAZ.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIHAZTARIFE.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIHAZTIP.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIHAZYETKIBILET.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIHAZYETKIKART.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CineBiletSelect_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CineGetMovieSessionLog_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CineKoltukSelect_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaBookingDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaBookingDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaBookingDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaBookingDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaBookingDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CineSalonSelect_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CineSeansSelectControl_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CineSeansSelect_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CineSubeSelect_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class\CustomTableLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\PrinterTemplates.cs" />
+    <Compile Include="Device.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DOVIZ.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAKULTE.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FFSaleDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FFSaleDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FFSaleDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FFSaleDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FFSaleDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="fn_SplitValues_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AcenteTariffScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AcenteTariffScreen.Designer.cs">
+      <DependentUpon>AcenteTariffScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ManuelCodeInputForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ManuelCodeInputForm2.Designer.cs">
+      <DependentUpon>ManuelCodeInputForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ManuelCodeInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ManuelCodeInputForm.Designer.cs">
+      <DependentUpon>ManuelCodeInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CustomerInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CustomerInfoForm.Designer.cs">
+      <DependentUpon>CustomerInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReservationListByCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReservationListByCard.Designer.cs">
+      <DependentUpon>ReservationListByCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TapYourCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TapYourCardForm.Designer.cs">
+      <DependentUpon>TapYourCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ConfirmForm.Designer.cs">
+      <DependentUpon>ConfirmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AmountSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AmountSelection.Designer.cs">
+      <DependentUpon>AmountSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\ExtensionMethods.cs" />
+    <Compile Include="Class\DynamicClass.cs" />
+    <Compile Include="DatabaseExtensionMethods.cs" />
+    <Compile Include="Form\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\LoginUser.cs" />
+    <Compile Include="Form\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CustomerScreenDefault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CustomerScreenDefault.Designer.cs">
+      <DependentUpon>CustomerScreenDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SeatInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SeatInformation.Designer.cs">
+      <DependentUpon>SeatInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReservationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReservationList.Designer.cs">
+      <DependentUpon>ReservationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GECISBILET.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GECISKART.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GRUP.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GRUPTANIM.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HARCAMA_NOKTASI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HAREKET.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HEDIYELIKESYA.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HEDIYELIKESYASATIS.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ISLEMLER.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAFETERYA_SATIS.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAFETERYA_SATISURUN.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAFETERYA_STOK.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAFETERYA_URUN.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAFETERYA_URUNGRUP.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAFETERYA_URUN_YETKI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAMPANYA.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAMPANYAKOD.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAMPANYATARIFE.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KAMPUS.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARALISTE.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KartKota.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KartKotaKod.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARTLAR.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARTLAR_DEMO.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARTLAR_DUZELTME.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARTLAR_OZEL.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARTPUAN.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARTPUANDETAY.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARTPUANYUKLEME.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KARTSERI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KartTarife.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KIMLIK_BILGILERI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciOturum.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabelDictionary.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Languages.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOG.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MailLog.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CustomerAuthorizationCheckViewModel.cs" />
+    <Compile Include="Model\CustomerAuthorizationFindTagIdViewModel.cs" />
+    <Compile Include="Module.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleAuth.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleOperation.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movie.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieBookingSerialReservation.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieCast.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieCategory.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieDirector.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieFormat.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSeatType.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSession.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSessionAmount.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSessionBooking.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSessionBookingDetail.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSessionLog.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSessionReservation.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieSession_MovieFormat.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTariff.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheater.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheaterLog.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlace.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceLog.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceTemplate.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceTemplateBlock.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceTemplateDetails.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceTemplateDetailsLog.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceTemplateDetailsOto.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceTemplateDetailsSon.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceTemplateDetailsYdk.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTheatrePlaceTemplateDetailsYdk2.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicket.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketDeleted.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketOption.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketSale.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketSaleDeleted.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketSaleLog.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketSaleOption.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketSaleOptionDeleted.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketSalePayment.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketSalePaymentDeleted.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieTicketSalePaymentType.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovieType.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_MovieCast.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_MovieCategory.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_MovieDirector.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_MovieFormat.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_MovieType.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OZELGECIS.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PARAMETRELER.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL_TARIFE.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL_TARIFE_KAMPANYA.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL_TARIFE_YETKI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL_TIPLERI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrinterTemplate.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PrinterTemplate_20171210.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PSWD.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PSWD_SESSION.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rehber.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RehberKota.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SATIS_NOKTASI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SeatTariffSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeatTariffSelector.Designer.cs">
+      <DependentUpon>SeatTariffSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TariffSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TariffSelection.Designer.cs">
+      <DependentUpon>TariffSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TicketPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TicketPrint.Designer.cs">
+      <DependentUpon>TicketPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmtpInfo.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sozlesme.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Movie_SelectInfo_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Movie_Session_Tariff_Count_Details_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Report_General2_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Report_General_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Report_MovieSessionActivity_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_UyumsuzSatisBul_Result.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSTEMLOG.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemParameter.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_001_Client_Query_Event.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_001_Kart_Logs.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_001_Server_Query_Event.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_001_Tables_Compare.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_001_Values.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_001_YUKLEME_NOKTASI_AND_Kullanici.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MovieItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\MovieItem.Designer.cs">
+      <DependentUpon>MovieItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MovieSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MovieSelection.Designer.cs">
+      <DependentUpon>MovieSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\RepeatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\SeatItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\SeatSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SeatSelection.Designer.cs">
+      <DependentUpon>SeatSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\SessionButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\StaticClass.cs" />
+    <Compile Include="UserGroup.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserGroup_User.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USERLOG.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserSession.cs">
+      <DependentUpon>CinemaBookingDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VergiDairesi.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YAZICI_SABLON.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YEMEKHANE_HAREKET.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YEMEKHANE_HAREKET_KIOSK.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YEMEKHANE_HAREKET_RAW.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YEMEKHANE_HAREKET_RAW_DEL.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YEMEKHANE_HAREKET_RAW_DUZELTME.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YETKI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YETKIT.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YUKLEME_NOKTASI.cs">
+      <DependentUpon>FFSaleDataModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\AcenteTariffScreen.resx">
+      <DependentUpon>AcenteTariffScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ManuelCodeInputForm2.resx">
+      <DependentUpon>ManuelCodeInputForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ManuelCodeInputForm.resx">
+      <DependentUpon>ManuelCodeInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerInfoForm.resx">
+      <DependentUpon>CustomerInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationListByCard.resx">
+      <DependentUpon>ReservationListByCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TapYourCardForm.resx">
+      <DependentUpon>TapYourCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ConfirmForm.resx">
+      <DependentUpon>ConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AmountSelection.resx">
+      <DependentUpon>AmountSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerScreenDefault.resx">
+      <DependentUpon>CustomerScreenDefault.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SeatInformation.resx">
+      <DependentUpon>SeatInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationList.resx">
+      <DependentUpon>ReservationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeatTariffSelector.resx">
+      <DependentUpon>SeatTariffSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TariffSelection.resx">
+      <DependentUpon>TariffSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TicketPrint.resx">
+      <DependentUpon>TicketPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\MovieItem.resx">
+      <DependentUpon>MovieItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MovieSelection.resx">
+      <DependentUpon>MovieSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form\SeatSelection.resx">
+      <DependentUpon>SeatSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <EntityDeploy Include="FFSaleDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FFSaleDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="CinemaBookingDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CinemaBookingDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="CinemaBookingDataModel.edmx.diagram">
+      <DependentUpon>CinemaBookingDataModel.edmx</DependentUpon>
+    </None>
+    <None Include="FFSaleDataModel.edmx.diagram">
+      <DependentUpon>FFSaleDataModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1492639406_ticket.ico" />
+    <Content Include="CinemaBookingDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CinemaBookingDataModel.edmx</DependentUpon>
+      <LastGenOutput>CinemaBookingDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CinemaBookingDataModel.edmx.sql" />
+    <Content Include="CinemaBookingDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CinemaBookingDataModel.edmx</DependentUpon>
+      <LastGenOutput>CinemaBookingDataModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="FFSaleDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FFSaleDataModel.edmx</DependentUpon>
+      <LastGenOutput>FFSaleDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FFSaleDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FFSaleDataModel.edmx</DependentUpon>
+      <LastGenOutput>FFSaleDataModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

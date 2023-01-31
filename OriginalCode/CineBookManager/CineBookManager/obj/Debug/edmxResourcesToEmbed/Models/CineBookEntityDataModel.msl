@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CineBookModelStoreContainer" CdmEntityContainer="CineBookEntities">
+    <EntitySetMapping Name="Module">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Module)">
+        <MappingFragment StoreEntitySet="Module">
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleAuth">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.ModuleAuth)">
+        <MappingFragment StoreEntitySet="ModuleAuth">
+          <ScalarProperty Name="AuthId" ColumnName="AuthId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+          <ScalarProperty Name="OperationCode" ColumnName="OperationCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModuleOperation">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.ModuleOperation)">
+        <MappingFragment StoreEntitySet="ModuleOperation">
+          <ScalarProperty Name="OperationCode" ColumnName="OperationCode" />
+          <ScalarProperty Name="ModuleCode" ColumnName="ModuleCode" />
+          <ScalarProperty Name="OperationId" ColumnName="OperationId" />
+          <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movie">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Movie)">
+        <MappingFragment StoreEntitySet="Movie">
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="PosterPreview" ColumnName="PosterPreview" />
+          <ScalarProperty Name="PosterOriginal" ColumnName="PosterOriginal" />
+          <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="Story" ColumnName="Story" />
+          <ScalarProperty Name="NameTr" ColumnName="NameTr" />
+          <ScalarProperty Name="MadeYear" ColumnName="MadeYear" />
+          <ScalarProperty Name="VisionDate2" ColumnName="VisionDate2" />
+          <ScalarProperty Name="Distributor" ColumnName="Distributor" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="SgmMovieId" ColumnName="SgmMovieId" />
+          <ScalarProperty Name="PosterUrl" ColumnName="PosterUrl" />
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movie_MovieCast">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Movie_MovieCast)">
+        <MappingFragment StoreEntitySet="Movie_MovieCast">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="MovieCastId" ColumnName="MovieCastId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movie_MovieCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Movie_MovieCategory)">
+        <MappingFragment StoreEntitySet="Movie_MovieCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="MovieCategoryId" ColumnName="MovieCategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movie_MovieDirector">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Movie_MovieDirector)">
+        <MappingFragment StoreEntitySet="Movie_MovieDirector">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="MovieDirectorId" ColumnName="MovieDirectorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movie_MovieFormat">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Movie_MovieFormat)">
+        <MappingFragment StoreEntitySet="Movie_MovieFormat">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="MovieFormatId" ColumnName="MovieFormatId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movie_MovieType">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Movie_MovieType)">
+        <MappingFragment StoreEntitySet="Movie_MovieType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="MovieTypeId" ColumnName="MovieTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieCast">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieCast)">
+        <MappingFragment StoreEntitySet="MovieCast">
+          <ScalarProperty Name="MovieCastId" ColumnName="MovieCastId" />
+          <ScalarProperty Name="CastName" ColumnName="CastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieCategory">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieCategory)">
+        <MappingFragment StoreEntitySet="MovieCategory">
+          <ScalarProperty Name="MovieCategoryId" ColumnName="MovieCategoryId" />
+          <ScalarProperty Name="MovieCategoryCode" ColumnName="MovieCategoryCode" />
+          <ScalarProperty Name="MovieCategoryName" ColumnName="MovieCategoryName" />
+          <ScalarProperty Name="MovieCategoryImage" ColumnName="MovieCategoryImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieDirector">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieDirector)">
+        <MappingFragment StoreEntitySet="MovieDirector">
+          <ScalarProperty Name="MovieDirectorId" ColumnName="MovieDirectorId" />
+          <ScalarProperty Name="MovieDirectorName" ColumnName="MovieDirectorName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieFormat">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieFormat)">
+        <MappingFragment StoreEntitySet="MovieFormat">
+          <ScalarProperty Name="MovieFormatId" ColumnName="MovieFormatId" />
+          <ScalarProperty Name="MovieFormatCode" ColumnName="MovieFormatCode" />
+          <ScalarProperty Name="MovieFormatName" ColumnName="MovieFormatName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieSeatType">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieSeatType)">
+        <MappingFragment StoreEntitySet="MovieSeatType">
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="MovieSeatTypeName" ColumnName="MovieSeatTypeName" />
+          <ScalarProperty Name="MovieSeatTypeBackground" ColumnName="MovieSeatTypeBackground" />
+          <ScalarProperty Name="MovieSeatTypeForeground" ColumnName="MovieSeatTypeForeground" />
+          <ScalarProperty Name="Reserved" ColumnName="Reserved" />
+          <ScalarProperty Name="Salable" ColumnName="Salable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieSession">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieSession)">
+        <MappingFragment StoreEntitySet="MovieSession">
+          <ScalarProperty Name="MovieSessionId" ColumnName="MovieSessionId" />
+          <ScalarProperty Name="MovieId" ColumnName="MovieId" />
+          <ScalarProperty Name="MovieTheatrePlaceId" ColumnName="MovieTheatrePlaceId" />
+          <ScalarProperty Name="SessionTime" ColumnName="SessionTime" />
+          <ScalarProperty Name="SgmSessionId" ColumnName="SgmSessionId" />
+          <ScalarProperty Name="SgmSessionId2" ColumnName="SgmSessionId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieSession_MovieFormat">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieSession_MovieFormat)">
+        <MappingFragment StoreEntitySet="MovieSession_MovieFormat">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieSessionId" ColumnName="MovieSessionId" />
+          <ScalarProperty Name="MovieFormatId" ColumnName="MovieFormatId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieSessionReservation">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieSessionReservation)">
+        <MappingFragment StoreEntitySet="MovieSessionReservation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieSessionId" ColumnName="MovieSessionId" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="SeatPrefix" ColumnName="SeatPrefix" />
+          <ScalarProperty Name="SeatSuffix" ColumnName="SeatSuffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="MovieTheatrePlaceTemplateDetailsId" ColumnName="MovieTheatrePlaceTemplateDetailsId" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTariff">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTariff)">
+        <MappingFragment StoreEntitySet="MovieTariff">
+          <ScalarProperty Name="MovieTariffId" ColumnName="MovieTariffId" />
+          <ScalarProperty Name="MovieTariffName" ColumnName="MovieTariffName" />
+          <ScalarProperty Name="CustomerAuthorization" ColumnName="CustomerAuthorization" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheater">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheater)">
+        <MappingFragment StoreEntitySet="MovieTheater">
+          <ScalarProperty Name="MovieTheaterId" ColumnName="MovieTheaterId" />
+          <ScalarProperty Name="MovieTheaterName" ColumnName="MovieTheaterName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="TownName" ColumnName="TownName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AvmName" ColumnName="AvmName" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlace">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlace)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlace">
+          <ScalarProperty Name="MovieTheatrePlaceId" ColumnName="MovieTheatrePlaceId" />
+          <ScalarProperty Name="MovieTheaterId" ColumnName="MovieTheaterId" />
+          <ScalarProperty Name="MovieTheatrePlaceName" ColumnName="MovieTheatrePlaceName" />
+          <ScalarProperty Name="MovieTheatrePlaceTemplateId" ColumnName="MovieTheatrePlaceTemplateId" />
+          <ScalarProperty Name="SgmSaloonFormat" ColumnName="SgmSaloonFormat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceTemplate">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceTemplate)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceTemplate">
+          <ScalarProperty Name="MovieTheatrePlaceTemplateId" ColumnName="MovieTheatrePlaceTemplateId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceTemplateDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceTemplateDetails)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceTemplateDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieTheatrePlaceTemplateId" ColumnName="MovieTheatrePlaceTemplateId" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicket">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicket)">
+        <MappingFragment StoreEntitySet="MovieTicket">
+          <ScalarProperty Name="MovieTicketId" ColumnName="MovieTicketId" />
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="MovieTariffId" ColumnName="MovieTariffId" />
+          <ScalarProperty Name="SeatPrefix" ColumnName="SeatPrefix" />
+          <ScalarProperty Name="SeatSuffix" ColumnName="SeatSuffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="PrintDate" ColumnName="PrintDate" />
+          <ScalarProperty Name="PrintLocation" ColumnName="PrintLocation" />
+          <ScalarProperty Name="BarcodeNumber" ColumnName="BarcodeNumber" />
+          <ScalarProperty Name="TicketOrder" ColumnName="TicketOrder" />
+          <ScalarProperty Name="CustomerInfo" ColumnName="CustomerInfo" />
+          <ScalarProperty Name="BlockName" ColumnName="BlockName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketOption">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketOption)">
+        <MappingFragment StoreEntitySet="MovieTicketOption">
+          <ScalarProperty Name="TicketOptionId" ColumnName="TicketOptionId" />
+          <ScalarProperty Name="TicketOptionName" ColumnName="TicketOptionName" />
+          <ScalarProperty Name="BarcodeNumber" ColumnName="BarcodeNumber" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketSale">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketSale)">
+        <MappingFragment StoreEntitySet="MovieTicketSale">
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="MovieSessionId" ColumnName="MovieSessionId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Completed" ColumnName="Completed" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketSaleOption">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketSaleOption)">
+        <MappingFragment StoreEntitySet="MovieTicketSaleOption">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="TicketOptionId" ColumnName="TicketOptionId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketSalePayment">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketSalePayment)">
+        <MappingFragment StoreEntitySet="MovieTicketSalePayment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="MovieTicketSalePaymentTypeId" ColumnName="MovieTicketSalePaymentTypeId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="KotaId" ColumnName="KotaId" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="KodUsed" ColumnName="KodUsed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketSalePaymentType">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketSalePaymentType)">
+        <MappingFragment StoreEntitySet="MovieTicketSalePaymentType">
+          <ScalarProperty Name="MovieTicketSalePaymentTypeId" ColumnName="MovieTicketSalePaymentTypeId" />
+          <ScalarProperty Name="MovieTicketSalePaymentTypeName" ColumnName="MovieTicketSalePaymentTypeName" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieType">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieType)">
+        <MappingFragment StoreEntitySet="MovieType">
+          <ScalarProperty Name="MovieTypeId" ColumnName="MovieTypeId" />
+          <ScalarProperty Name="MovieTypeName" ColumnName="MovieTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrinterTemplate">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.PrinterTemplate)">
+        <MappingFragment StoreEntitySet="PrinterTemplate">
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="TemplateContent" ColumnName="TemplateContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.sysdiagrams)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemParameter">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.SystemParameter)">
+        <MappingFragment StoreEntitySet="SystemParameter">
+          <ScalarProperty Name="ParameterName" ColumnName="ParameterName" />
+          <ScalarProperty Name="ParameterValue" ColumnName="ParameterValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.User)">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="MailAddress" ColumnName="MailAddress" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="LanguagesId" ColumnName="LanguagesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserGroup">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.UserGroup)">
+        <MappingFragment StoreEntitySet="UserGroup">
+          <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+          <ScalarProperty Name="UserGroupCode" ColumnName="UserGroupCode" />
+          <ScalarProperty Name="UserGroupName" ColumnName="UserGroupName" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserGroup_User">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.UserGroup_User)">
+        <MappingFragment StoreEntitySet="UserGroup_User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserSession">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.UserSession)">
+        <MappingFragment StoreEntitySet="UserSession">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Device">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Device)">
+        <MappingFragment StoreEntitySet="Device">
+          <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="MacAddress" ColumnName="MacAddress" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="TcpPort" ColumnName="TcpPort" />
+          <ScalarProperty Name="UdpPort" ColumnName="UdpPort" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketDeleted">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketDeleted)">
+        <MappingFragment StoreEntitySet="MovieTicketDeleted">
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="MovieTicketId" ColumnName="MovieTicketId" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="MovieTariffId" ColumnName="MovieTariffId" />
+          <ScalarProperty Name="SeatPrefix" ColumnName="SeatPrefix" />
+          <ScalarProperty Name="SeatSuffix" ColumnName="SeatSuffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsPrinted" ColumnName="IsPrinted" />
+          <ScalarProperty Name="BarcodeNumber" ColumnName="BarcodeNumber" />
+          <ScalarProperty Name="TicketOrder" ColumnName="TicketOrder" />
+          <ScalarProperty Name="MovieTicketDeletedId" ColumnName="MovieTicketDeletedId" />
+          <ScalarProperty Name="PrintDate" ColumnName="PrintDate" />
+          <ScalarProperty Name="PrintLocation" ColumnName="PrintLocation" />
+          <ScalarProperty Name="CustomerInfo" ColumnName="CustomerInfo" />
+          <ScalarProperty Name="BlockName" ColumnName="BlockName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketSaleDeleted">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketSaleDeleted)">
+        <MappingFragment StoreEntitySet="MovieTicketSaleDeleted">
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="MovieSessionId" ColumnName="MovieSessionId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Completed" ColumnName="Completed" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketSaleOptionDeleted">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketSaleOptionDeleted)">
+        <MappingFragment StoreEntitySet="MovieTicketSaleOptionDeleted">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="TicketOptionId" ColumnName="TicketOptionId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketSalePaymentDeleted">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketSalePaymentDeleted)">
+        <MappingFragment StoreEntitySet="MovieTicketSalePaymentDeleted">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="MovieTicketSalePaymentTypeId" ColumnName="MovieTicketSalePaymentTypeId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="KotaId" ColumnName="KotaId" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="KodUsed" ColumnName="KodUsed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LabelDictionary">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.LabelDictionary)">
+        <MappingFragment StoreEntitySet="LabelDictionary">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LanguagesId" ColumnName="LanguagesId" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="LabelLng" ColumnName="LabelLng" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.Languages)">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieSessionBooking">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieSessionBooking)">
+        <MappingFragment StoreEntitySet="MovieSessionBooking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ReservationId" ColumnName="ReservationId" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="MovieSessionId" ColumnName="MovieSessionId" />
+          <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
+          <ScalarProperty Name="ExpirationTime" ColumnName="ExpirationTime" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="MovieTicketSaleId" ColumnName="MovieTicketSaleId" />
+          <ScalarProperty Name="CancellationTime" ColumnName="CancellationTime" />
+          <ScalarProperty Name="CancellationUserId" ColumnName="CancellationUserId" />
+          <ScalarProperty Name="CancellationSessionId" ColumnName="CancellationSessionId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieSessionBookingDetail">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieSessionBookingDetail)">
+        <MappingFragment StoreEntitySet="MovieSessionBookingDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BookingId" ColumnName="BookingId" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="SeatPrefix" ColumnName="SeatPrefix" />
+          <ScalarProperty Name="SeatSuffix" ColumnName="SeatSuffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+          <ScalarProperty Name="MovieTariffId" ColumnName="MovieTariffId" />
+          <ScalarProperty Name="CustomerInfo" ColumnName="CustomerInfo" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieSessionAmount">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieSessionAmount)">
+        <MappingFragment StoreEntitySet="MovieSessionAmount">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieSessionId" ColumnName="MovieSessionId" />
+          <ScalarProperty Name="MovieTariffId" ColumnName="MovieTariffId" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="MovieTheatrePlaceTemplateDetailsId" ColumnName="MovieTheatrePlaceTemplateDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceTemplateBlock">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceTemplateBlock)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceTemplateBlock">
+          <ScalarProperty Name="MovieTheaterBlockId" ColumnName="MovieTheaterBlockId" />
+          <ScalarProperty Name="MovieTheaterBlockName" ColumnName="MovieTheaterBlockName" />
+          <ScalarProperty Name="MovieTheatrePlaceTemplateId" ColumnName="MovieTheatrePlaceTemplateId" />
+          <ScalarProperty Name="BlockIndex" ColumnName="BlockIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieSessionLog">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieSessionLog)">
+        <MappingFragment StoreEntitySet="MovieSessionLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieSessionId" ColumnName="MovieSessionId" />
+          <ScalarProperty Name="SaloonName" ColumnName="SaloonName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="SeanceTime" ColumnName="SeanceTime" />
+          <ScalarProperty Name="FilmId" ColumnName="FilmId" />
+          <ScalarProperty Name="VersionName" ColumnName="VersionName" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="IsSend" ColumnName="IsSend" />
+          <ScalarProperty Name="SgmSessionId" ColumnName="SgmSessionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheaterLog">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheaterLog)">
+        <MappingFragment StoreEntitySet="MovieTheaterLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="TownName" ColumnName="TownName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AvmName" ColumnName="AvmName" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="IsSend" ColumnName="IsSend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceLog">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceLog)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="SaloonTypes" ColumnName="SaloonTypes" />
+          <ScalarProperty Name="AudioFormats" ColumnName="AudioFormats" />
+          <ScalarProperty Name="Seats" ColumnName="Seats" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="IsSend" ColumnName="IsSend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceTemplateDetailsLog">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceTemplateDetailsLog)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceTemplateDetailsLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="SeatName" ColumnName="SeatName" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="IsSend" ColumnName="IsSend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTicketSaleLog">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTicketSaleLog)">
+        <MappingFragment StoreEntitySet="MovieTicketSaleLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="SeanceId" ColumnName="SeanceId" />
+          <ScalarProperty Name="SaleTime" ColumnName="SaleTime" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="PlatformType" ColumnName="PlatformType" />
+          <ScalarProperty Name="PaymentProvider" ColumnName="PaymentProvider" />
+          <ScalarProperty Name="PaymentNumber" ColumnName="PaymentNumber" />
+          <ScalarProperty Name="PaymentZNumber" ColumnName="PaymentZNumber" />
+          <ScalarProperty Name="SeatNumber" ColumnName="SeatNumber" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="TicketType" ColumnName="TicketType" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="TranDate" ColumnName="TranDate" />
+          <ScalarProperty Name="IsSend" ColumnName="IsSend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceTemplateDetailsOto">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceTemplateDetailsOto)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceTemplateDetailsOto">
+          <ScalarProperty Name="MovieTheatrePlaceTemplateId" ColumnName="MovieTheatrePlaceTemplateId" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceTemplateDetailsSon">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceTemplateDetailsSon)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceTemplateDetailsSon">
+          <ScalarProperty Name="MovieTheatrePlaceTemplateId" ColumnName="MovieTheatrePlaceTemplateId" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceTemplateDetailsYdk">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceTemplateDetailsYdk)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceTemplateDetailsYdk">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieTheatrePlaceTemplateId" ColumnName="MovieTheatrePlaceTemplateId" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieTheatrePlaceTemplateDetailsYdk2">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.MovieTheatrePlaceTemplateDetailsYdk2)">
+        <MappingFragment StoreEntitySet="MovieTheatrePlaceTemplateDetailsYdk2">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MovieTheatrePlaceTemplateId" ColumnName="MovieTheatrePlaceTemplateId" />
+          <ScalarProperty Name="RowIndex" ColumnName="RowIndex" />
+          <ScalarProperty Name="ColumnIndex" ColumnName="ColumnIndex" />
+          <ScalarProperty Name="MovieSeatTypeId" ColumnName="MovieSeatTypeId" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrinterTemplate_20171210">
+      <EntityTypeMapping TypeName="IsTypeOf(CineBookModel.PrinterTemplate_20171210)">
+        <MappingFragment StoreEntitySet="PrinterTemplate_20171210">
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="TemplateContent" ColumnName="TemplateContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bbdb80a5898c47888b8d9b50f325cc3b" Name="Diagram1">
+        <EntityTypeShape EntityType="FFSaleModel.AAA_Test" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Acente" Width="1.5" PointX="16" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AcenteKullanici" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AcenteTipi" Width="1.5" PointX="13.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_Bileklik" Width="1.5" PointX="16.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_BileklikTarife" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_HizmetTuru" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_Kiosk" Width="1.5" PointX="11.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_Kullanici" Width="1.5" PointX="8.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_KullaniciOturum" Width="1.5" PointX="11" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_KurumTuru" Width="1.5" PointX="11.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_Lokasyon" Width="1.5" PointX="11.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_Operator" Width="1.5" PointX="11.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_Parametre" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AR_Rezervasyon" Width="1.5" PointX="14" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Banka" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BILET" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BILET_OZEL" Width="1.5" PointX="7.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BILET_TARIFE" Width="1.5" PointX="13.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BiletKota" Width="1.5" PointX="20.5" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BiletKotaKod" Width="1.5" PointX="25.75" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BiletTalep" Width="1.5" PointX="22.75" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BiletTarife" Width="1.5" PointX="18.25" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BOLUM" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.CIHAZ" Width="1.5" PointX="21" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.CIHAZTIP" Width="1.5" PointX="18.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.DOVIZ" Width="1.5" PointX="15.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.FAKULTE" Width="1.5" PointX="1.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.HARCAMA_NOKTASI" Width="1.5" PointX="6" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.HEDIYELIKESYA" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.ISLEMLER" Width="1.5" PointX="7.75" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAFETERYA_URUN" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAFETERYA_URUNGRUP" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAMPANYA" Width="1.5" PointX="10.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAMPUS" Width="1.5" PointX="1.5" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KartKota" Width="1.5" PointX="23.5" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KartKotaKod" Width="1.5" PointX="25.75" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARTLAR" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARTLAR_DEMO" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARTSERI" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KartTarife" Width="1.5" PointX="21.25" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Kullanici" Width="1.5" PointX="23.5" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KullaniciOturum" Width="1.5" PointX="25.75" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.MailLog" Width="1.5" PointX="18.25" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.PARAMETRELER" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.PERSONEL" Width="1.5" PointX="3" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.PERSONEL_TARIFE" Width="1.5" PointX="3" PointY="36.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.PERSONEL_TIPLERI" Width="1.5" PointX="0.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.PSWD" Width="1.5" PointX="12.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.PSWD_SESSION" Width="1.5" PointX="14.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Rehber" Width="1.5" PointX="18.25" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.RehberKota" Width="1.5" PointX="20.5" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.SATIS_NOKTASI" Width="1.5" PointX="20.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.SmtpInfo" Width="1.5" PointX="23.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Sozlesme" Width="1.5" PointX="18.25" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Tbl_001_Client_Query_Event" Width="1.5" PointX="0.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Tbl_001_Kart_Logs" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Tbl_001_Server_Query_Event" Width="1.5" PointX="25.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Tbl_001_Tables_Compare" Width="1.5" PointX="25.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Tbl_001_Values" Width="1.5" PointX="25.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.Tbl_001_YUKLEME_NOKTASI_AND_Kullanici" Width="1.5" PointX="25.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.VergiDairesi" Width="1.5" PointX="25.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YAZICI_SABLON" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YUKLEME_NOKTASI" Width="1.5" PointX="12.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.ADRES_BILGILERI" Width="1.5" PointX="5.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.AKTIVASYON" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BAKIYE_YUKLEME" Width="1.5" PointX="27.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BAKIYE_YUKLEME_BONUS_TANIM" Width="1.5" PointX="27.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BAKIYE_YUKLEME_COP" Width="1.5" PointX="27.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BAKIYE_YUKLEME_DUZELTME" Width="1.5" PointX="27.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BAKIYE_YUKLEME_IADE" Width="1.5" PointX="27.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BILET_DUZELTME" Width="1.5" PointX="0.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BILET_ODEME" Width="1.5" PointX="7.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BILET_SABLON" Width="1.5" PointX="9.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BILET_TARIFE_SABLON" Width="1.5" PointX="29.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BILET_TARIFE_YETKI" Width="1.5" PointX="2.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.BURS" Width="1.5" PointX="29.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.CIHAZTARIFE" Width="1.5" PointX="4.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.CIHAZYETKIBILET" Width="1.5" PointX="29.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.CIHAZYETKIKART" Width="1.5" PointX="29.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.GECISBILET" Width="1.5" PointX="29.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.GECISKART" Width="1.5" PointX="14.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.GRUP" Width="1.5" PointX="29.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.GRUPTANIM" Width="1.5" PointX="29.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.HAREKET" Width="1.5" PointX="10" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.HEDIYELIKESYASATIS" Width="1.5" PointX="29.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAFETERYA_SATIS" Width="1.5" PointX="29.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAFETERYA_SATISURUN" Width="1.5" PointX="31.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAFETERYA_STOK" Width="1.5" PointX="31.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAFETERYA_URUN_YETKI" Width="1.5" PointX="31.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAMPANYAKOD" Width="1.5" PointX="9.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KAMPANYATARIFE" Width="1.5" PointX="11.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARALISTE" Width="1.5" PointX="31.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARTLAR_DUZELTME" Width="1.5" PointX="31.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARTLAR_OZEL" Width="1.5" PointX="31.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARTPUAN" Width="1.5" PointX="31.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARTPUANDETAY" Width="1.5" PointX="31.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KARTPUANYUKLEME" Width="1.5" PointX="31.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.KIMLIK_BILGILERI" Width="1.5" PointX="5.25" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.LOG" Width="1.5" PointX="27.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.OZELGECIS" Width="1.5" PointX="0.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.PERSONEL_TARIFE_KAMPANYA" Width="1.5" PointX="33.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.PERSONEL_TARIFE_YETKI" Width="1.5" PointX="33.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.SYSTEMLOG" Width="1.5" PointX="33.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.USERLOG" Width="1.5" PointX="33.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YEMEKHANE_HAREKET" Width="1.5" PointX="23.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YEMEKHANE_HAREKET_KIOSK" Width="1.5" PointX="8.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YEMEKHANE_HAREKET_RAW" Width="1.5" PointX="23.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YEMEKHANE_HAREKET_RAW_DEL" Width="1.5" PointX="23.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YEMEKHANE_HAREKET_RAW_DUZELTME" Width="1.5" PointX="33.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YETKI" Width="1.5" PointX="13.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FFSaleModel.YETKIT" Width="1.5" PointX="33.75" PointY="17.75" IsExpanded="true" />
+        <AssociationConnector Association="FFSaleModel.FK_Acente_AcenteTipi" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_MailLog_Acente" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_Rehber_Acente" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_Sozlesme_Acente" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_AR_Bileklik_AR_Rezervasyon" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_AR_Rezervasyon_AR_Kiosk" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_AR_KullaniciOturum_AR_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_AR_Rezervasyon_AR_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_AR_Rezervasyon_AR_KurumTuru" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_AR_Rezervasyon_AR_Lokasyon" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_AR_Rezervasyon_AR_Operator" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_BiletKota_BiletTarife" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_BiletKota_Sozlesme" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_BiletKotaKod_BiletKota" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_BiletTalep_BiletKota" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_RehberKota_BiletKota" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_BiletKotaKod_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_BOLUM_FAKULTE" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_BOLUM_KAMPUS" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_PERSONEL_BOLUM" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_CIHAZ_CIHAZTIP" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_YEMEKHANE_HAREKET_CIHAZ" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_YEMEKHANE_HAREKET_RAW_CIHAZ1" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_YEMEKHANE_HAREKET_RAW_DEL_CIHAZ1" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_YEMEKHANE_HAREKET_KIOSK_HARNOK" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_HAREKET_ISLEMLER" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_KartKota_KartTarife" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_KartKota_Sozlesme" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_KartKotaKod_KartKota" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_KartKotaKod_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_KARTLAR_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_KullaniciOturum_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_ADRES_BILGILERI_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_KIMLIK_BILGILERI_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_PERSONEL_PERSONEL_TIPLERI" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_YEMEKHANE_HAREKET_KIOSK_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_PERSONEL_TARIFE_PERSONEL_TIPLERI" ManuallyRouted="false" />
+        <AssociationConnector Association="FFSaleModel.FK_RehberKota_Rehber" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

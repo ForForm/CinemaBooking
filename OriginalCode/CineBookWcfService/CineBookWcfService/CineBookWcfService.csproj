@@ -1,0 +1,340 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA5A00A7-AB08-41D9-AE2A-12F8D19C9309}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CineBookWcfService</RootNamespace>
+    <AssemblyName>CineBookWcfService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.ServiceModel.Discovery" />
+    <Reference Include="System.ServiceModel.Routing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Models\CineBookEntityDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CineBookEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>CineBookEntityDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CineBookEntityDataModel.edmx.sql" />
+    <Content Include="Models\CineBookEntityDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CineBookEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>CineBookEntityDataModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Extensions.cs" />
+    <Compile Include="Classes\StaticClass.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IRestService.cs" />
+    <Compile Include="Models\CineBookEntitiesExt.cs" />
+    <Compile Include="Models\CineBookEntityDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CineBookEntityDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CineBookEntityDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CineBookEntityDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CineBookEntityDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Device.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Module.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModuleAuth.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModuleOperation.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieBookingSerialReservation.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieCast.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieCategory.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieDirector.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieFormat.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSeatType.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSession.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionAmount.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionBooking.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionBookingDetail.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionReservation.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSession_MovieFormat.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTariff.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheater.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlace.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplate.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateBlock.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateDetails.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicket.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketDeleted.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketOption.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSale.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSaleDeleted.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSaleOption.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSaleOptionDeleted.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSalePayment.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSalePaymentDeleted.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSalePaymentType.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieType.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieCast.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieCategory.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieDirector.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieFormat.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieType.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrinterTemplate.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SystemParameter.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserGroup.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserGroup_User.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserSession.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RestService.cs" />
+    <Compile Include="Shared.cs" />
+    <Compile Include="ViewModels\MovieTariffViewModel.cs" />
+    <Compile Include="ViewModels\ReservationDetailViewModel.cs" />
+    <Compile Include="ViewModels\ReservationViewModel.cs" />
+    <Compile Include="ViewModels\CustomerAuthorizationCheckViewModel.cs" />
+    <Compile Include="ViewModels\CustomerAuthorizationFindTagIdViewModel.cs" />
+    <Compile Include="ViewModels\MovieCastViewModel.cs" />
+    <Compile Include="ViewModels\MovieCategoryViewModel.cs" />
+    <Compile Include="ViewModels\MovieDirectorViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormatViewModel.cs" />
+    <Compile Include="ViewModels\MovieSeatTypeViewModel.cs" />
+    <Compile Include="ViewModels\MovieSessionReservationViewModel.cs" />
+    <Compile Include="ViewModels\MovieSessionSummaryViewModel.cs" />
+    <Compile Include="ViewModels\MovieSessionViewModel.cs" />
+    <Compile Include="ViewModels\MovieSeatTemplateDetailViewModel.cs" />
+    <Compile Include="ViewModels\MovieTariffPriceViewModel.cs" />
+    <Compile Include="ViewModels\MovieTypeViewModel.cs" />
+    <Compile Include="ViewModels\MovieViewModel.cs" />
+    <Compile Include="ViewModels\SaleTicketViewModel.cs" />
+    <Compile Include="ViewModels\SaleViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\CineBookEntityDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CineBookEntityDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CineBookEntityDataModel.edmx.diagram">
+      <DependentUpon>CineBookEntityDataModel.edmx</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63160</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63160/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

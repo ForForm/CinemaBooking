@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4c97d414aed444f4928ba186aa22d22e" Name="Diagram1">
+        <EntityTypeShape EntityType="CinemaBookingDataModel.LabelDictionary" Width="1.5" PointX="12.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Languages" Width="1.5" PointX="0.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Module" Width="1.5" PointX="0.75" PointY="33.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.ModuleAuth" Width="1.5" PointX="5.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.ModuleOperation" Width="1.5" PointX="3" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Movie" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Movie_MovieCast" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Movie_MovieCategory" Width="1.5" PointX="11" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Movie_MovieDirector" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Movie_MovieFormat" Width="1.5" PointX="8" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Movie_MovieType" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieCast" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieCategory" Width="1.5" PointX="8.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieDirector" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieFormat" Width="1.5" PointX="5.75" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieSeatType" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieSession" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieSession_MovieFormat" Width="1.5" PointX="12.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieSessionAmount" Width="1.5" PointX="10.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieSessionBooking" Width="1.5" PointX="5.25" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieSessionBookingDetail" Width="1.5" PointX="10.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieSessionLog" Width="1.5" PointX="12.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieSessionReservation" Width="1.5" PointX="8.25" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTariff" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheater" Width="1.5" PointX="1.5" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheaterLog" Width="1.5" PointX="13.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlace" Width="1.5" PointX="0.75" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceLog" Width="1.5" PointX="14.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceTemplate" Width="1.5" PointX="1.5" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceTemplateBlock" Width="1.5" PointX="3.75" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceTemplateDetails" Width="1.5" PointX="11.5" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceTemplateDetailsLog" Width="1.5" PointX="14.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicket" Width="1.5" PointX="7.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketOption" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketSale" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketSaleLog" Width="1.5" PointX="15.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketSaleOption" Width="1.5" PointX="10.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketSalePayment" Width="1.5" PointX="10.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketSalePaymentType" Width="1.5" PointX="8.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieType" Width="1.5" PointX="3.75" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.PrinterTemplate" Width="1.5" PointX="15.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.SystemParameter" Width="1.5" PointX="16.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.User" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.UserGroup" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.UserGroup_User" Width="1.5" PointX="5.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.UserSession" Width="1.5" PointX="5.25" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.Device" Width="1.5" PointX="16.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceTemplateDetailsOto" Width="1.5" PointX="17.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceTemplateDetailsSon" Width="1.5" PointX="17.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceTemplateDetailsYdk" Width="1.5" PointX="13.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTheatrePlaceTemplateDetailsYdk2" Width="1.5" PointX="17.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketDeleted" Width="1.5" PointX="18.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketSaleDeleted" Width="1.5" PointX="19.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketSaleOptionDeleted" Width="1.5" PointX="19.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieTicketSalePaymentDeleted" Width="1.5" PointX="19.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.PrinterTemplate_20171210" Width="1.5" PointX="19.75" PointY="18.375" IsExpanded="true" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_User_Languages" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_ModuleOperation_Module" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_ModuleAuth_ModuleOperation" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_ModuleAuth_User" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_ModuleAuth_UserGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieCast_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieCategory_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieDirector_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieFormat_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieType_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSession_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieCast_MovieCast" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieCategory_MovieCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieDirector_MovieDirector" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieFormat_MovieFormat" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_Movie_MovieType_MovieType" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionAmount_MovieSeatType" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionBookingDetail_MovieSeatType" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionReservation_MovieSeatType" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTheatrePlaceTemplateDetails_MovieSeatType" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicket_MovieSeatType" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSession_MovieTheatrePlace" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionAmount_MovieSession" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionBooking_MovieSession" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionReservation_MovieSession" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicketSale_MovieSession" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionAmount_MovieTariff" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionBookingDetail_MovieSessionBooking" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieSessionReservation_User" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicket_MovieTariff" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTheatrePlace_MovieTheater" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTheatrePlace_MovieTheatrePlaceTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTheatrePlaceTemplateBlock_MovieTheatrePlaceTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTheatrePlaceTemplateDetails_MovieTheatrePlaceTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicket_MovieTicketSale" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicketSaleOption_MovieTicketOption" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicketSale_User" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicketSaleOption_MovieTicketSale" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicketSalePayment_MovieTicketSale" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_MovieTicketSalePayment_MovieTicketSalePaymentType" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_UserGroup_User_User" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_UserSession_User" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaBookingDataModel.FK_UserGroup_User_UserGroup" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CinemaBookingDataModel.MovieBookingSerialReservation" Width="1.5" PointX="20.375" PointY="20.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

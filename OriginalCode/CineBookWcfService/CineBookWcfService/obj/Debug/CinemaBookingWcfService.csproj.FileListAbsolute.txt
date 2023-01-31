@@ -1,0 +1,12 @@
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\bin\CinemaBookingWcfService.dll.config
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\bin\CinemaBookingWcfService.dll
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\bin\CinemaBookingWcfService.pdb
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\obj\Debug\CinemaBookingWcfService.csprojResolveAssemblyReference.cache
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\obj\Debug\CinemaBookingWcfService.csproj.CoreCompileInputs.cache
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\obj\Debug\CinemaBookingWcfService.dll
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\obj\Debug\CinemaBookingWcfService.pdb
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\bin\EntityFramework.dll
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\bin\EntityFramework.SqlServer.dll
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\bin\EntityFramework.xml
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\bin\EntityFramework.SqlServer.xml
+D:\BARKODES\PROJELER\CineBook\CinemaBookingWcfService\CinemaBookingWcfService\obj\Debug\CinemaBookingWcfService.csproj.CopyComplete

@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D93D66E-D60A-4A22-A34D-087983705980}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CineBookManager</RootNamespace>
+    <AssemblyName>CineBookManager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1492639406_ticket.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Telerik.Reporting, Version=12.2.18.912, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=12.2.18.912, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ExtensionMethods.cs" />
+    <Compile Include="Classes\SeatItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\StringConsts.cs" />
+    <Compile Include="Classes\LoginUser.cs" />
+    <Compile Include="Classes\StaticClass.cs" />
+    <Compile Include="Classes\TempColumns.cs" />
+    <Compile Include="Forms\EditableButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserEditForm.Designer.cs">
+      <DependentUpon>UserEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieSessionSaveAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieSessionSaveAsForm.Designer.cs">
+      <DependentUpon>MovieSessionSaveAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieAmountEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieAmountEditForm.Designer.cs">
+      <DependentUpon>MovieAmountEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieSessionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieSessionEditForm.Designer.cs">
+      <DependentUpon>MovieSessionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieForm.Designer.cs">
+      <DependentUpon>MovieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieCategoryEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieCategoryEditForm.Designer.cs">
+      <DependentUpon>MovieCategoryEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieFormatEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieFormatEditForm.Designer.cs">
+      <DependentUpon>MovieFormatEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieDirectorEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieDirectorEditForm.Designer.cs">
+      <DependentUpon>MovieDirectorEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieCastEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieCastEditForm.Designer.cs">
+      <DependentUpon>MovieCastEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieSessionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieSessionForm.Designer.cs">
+      <DependentUpon>MovieSessionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MovieTypeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovieTypeEditForm.Designer.cs">
+      <DependentUpon>MovieTypeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CineBookEntitiesExt.cs" />
+    <Compile Include="Models\CineBookEntityDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CineBookEntityDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CineBookEntityDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CineBookEntityDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CineBookEntityDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Device.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LabelDictionary.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Languages.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Module.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModuleAuth.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModuleOperation.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieCast.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieCategory.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieDirector.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieFormat.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSeatType.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSession.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionAmount.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionBooking.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionBookingDetail.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionLog.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSessionReservation.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieSession_MovieFormat.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTariff.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheater.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheaterLog.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlace.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceLog.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplate.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateBlock.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateDetails.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateDetailsLog.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateDetailsOto.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateDetailsSon.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateDetailsYdk.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTheatrePlaceTemplateDetailsYdk2.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicket.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketDeleted.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketOption.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSale.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSaleDeleted.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSaleLog.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSaleOption.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSaleOptionDeleted.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSalePayment.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSalePaymentDeleted.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieTicketSalePaymentType.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieType.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieCast.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieCategory.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieDirector.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieFormat.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie_MovieType.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrinterTemplate.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrinterTemplate_20171210.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SystemParameter.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserGroup.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserGroup_User.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserSession.cs">
+      <DependentUpon>CineBookEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserEditForm.resx">
+      <DependentUpon>UserEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieSessionSaveAsForm.resx">
+      <DependentUpon>MovieSessionSaveAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieAmountEditForm.resx">
+      <DependentUpon>MovieAmountEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieSessionEditForm.resx">
+      <DependentUpon>MovieSessionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieForm.resx">
+      <DependentUpon>MovieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieCategoryEditForm.resx">
+      <DependentUpon>MovieCategoryEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieFormatEditForm.resx">
+      <DependentUpon>MovieFormatEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieDirectorEditForm.resx">
+      <DependentUpon>MovieDirectorEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieCastEditForm.resx">
+      <DependentUpon>MovieCastEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieSessionForm.resx">
+      <DependentUpon>MovieSessionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovieTypeEditForm.resx">
+      <DependentUpon>MovieTypeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Models\CineBookEntityDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CineBookEntityDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App-Local.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App-Via.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\CineBookEntityDataModel.edmx.diagram">
+      <DependentUpon>CineBookEntityDataModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1492639406_ticket.ico" />
+    <Content Include="Models\CineBookEntityDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CineBookEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>CineBookEntityDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CineBookEntityDataModel.edmx.sql" />
+    <Content Include="Models\CineBookEntityDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CineBookEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>CineBookEntityDataModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
